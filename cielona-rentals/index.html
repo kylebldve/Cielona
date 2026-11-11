@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbf8f2">
+    <meta name="description" content="Cielona Rentals — Curated formal gowns and dresses for rent in Cabuyao City, Laguna. Timeless elegance for balls, debuts, weddings, and formal occasions.">
+    <title>Cielona Rentals | Luxury Gown & Dress Rental Boutique</title>
+
+    <!-- Browser Tab Favicon -->
+    <link rel="icon" type="image/png" href="images/logoo.png">
+    <link rel="shortcut icon" type="image/png" href="images/logoo.png">
+    <link rel="apple-touch-icon" href="images/logoo.png">
+
+    <!-- Google Fonts: Cormorant Garamond, Great Vibes, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========================================================================
+     1. REFERENCE BOUTIQUE DOUBLE-DOOR ENTRANCE (`#doorIntro`)
+     - Exact replication of the reference video (`cielona.vercel.app`) door design:
+       * Outer ambient slate-to-cream doorway frame & expanding warm golden glow
+       * Left & Right 4-panel Haussmann boiserie doors (`#doorLeft`, `#doorRight`)
+       * Top panel with botanical scroll flourish (`Sd`)
+       * Main center panel with draped festoon garland (`bd`) & 12-petal sunburst (`xd`)
+       * 2 raised horizontal moulded rails (`Vd`) with gold bottom accent lines
+       * Lower wainscot panel & bottom baseboard panel (`Hd`)
+       * Brushed gold kickplates (`Bd`) with 7 rotated brass screw heads
+       * 3 cylindrical gold barrel hinges (`zd`) on each outer edge + right door astragal
+       * Ornate pill-shaped gold backplates & pearl-beaded pastel-blue heart gem handles (`Cd`)
+       * Hanging porcelain-enamel "Welcome" sign with satin pastel-blue bow (`wd`)
+       * Bottom "OPEN THE DOOR" pill button + "or pull them apart" drag/hold interaction
+======================================================================== -->
+<section id="doorIntro" class="door-intro" role="dialog" aria-modal="true" aria-label="Enter Cielona">
+
+    <!-- Expanding Warm Interior Radial Glow Behind Doorway -->
+    <div id="doorRadialGlow" class="door-radial-glow" aria-hidden="true"></div>
+
+    <!-- Main Doorway Stage Viewport -->
+    <div class="door-stage-viewport">
+
+        <!-- Warm Golden-Cream Interior Room Backdrop -->
+        <div class="door-interior-backdrop" aria-hidden="true"></div>
+
+        <!-- Inset Doorway Frame Border & Depth Shadow -->
+        <div class="door-frame-border" aria-hidden="true"></div>
+
+        <!-- Bottom Golden Threshold Sill -->
+        <div class="door-bottom-threshold" aria-hidden="true"></div>
+
+        <!-- ================= LEFT DOOR (`#doorLeft`) ================= -->
+        <div id="doorLeft" class="ref-door-wrapper ref-door-left" aria-hidden="true">
+            <div class="ref-door-slab slab-left">
+                <!-- Soft-light vertical sheen -->
+                <div class="ref-door-softlight" aria-hidden="true"></div>
+                <!-- Outer & Inner vertical stile edge shading -->
+                <span class="ref-stile-shade shade-outer-left" aria-hidden="true"></span>
+                <span class="ref-stile-shade shade-inner-left" aria-hidden="true"></span>
+
+                <!-- 3 Outer Gold Barrel Hinges (9%, 49%, bottom 9%) -->
+                <div class="ref-hinge hinge-left hinge-pos-top" aria-hidden="true">
+                    <div class="hinge-cap-top"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-ring"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-cap-bot"></div>
+                </div>
+                <div class="ref-hinge hinge-left hinge-pos-mid" aria-hidden="true">
+                    <div class="hinge-cap-top"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-ring"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-cap-bot"></div>
+                </div>
+                <div class="ref-hinge hinge-left hinge-pos-bot" aria-hidden="true">
+                    <div class="hinge-cap-top"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-ring"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-cap-bot"></div>
+                </div>
+
+                <!-- Decorative Gold Heart Corner Ornament in Upper Corner -->
+                <svg viewBox="0 0 36 36" class="ref-corner-heart corner-heart-left" aria-hidden="true" focusable="false">
+                    <defs>
+                        <linearGradient id="doorHeartGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FFFDF5" />
+                            <stop offset="35%" stop-color="#F2D68A" />
+                            <stop offset="70%" stop-color="#C7973A" />
+                            <stop offset="100%" stop-color="#765013" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M18 7 C14 1 5 3 5 12 C5 20 18 29 18 29 C18 29 31 20 31 12 C31 3 22 1 18 7 Z" fill="url(#doorHeartGold)" stroke="#765013" stroke-width="0.8" />
+                    <path d="M18 10 C15 5 8 6 8 13 C8 19 18 26 18 26 C18 26 28 19 28 13 C28 6 21 5 18 10 Z" fill="none" stroke="#FFF7DE" stroke-width="0.75" opacity="0.9" />
+                    <circle cx="18" cy="15" r="2.2" fill="#FFFDF5" opacity="0.95" />
+                </svg>
+
+                <!-- 1. Top Recessed Boiserie Panel (`top: 3%; height: 22%`) with Botanical Scroll (`Sd`) -->
+                <div class="ref-boiserie-panel panel-top">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                            <svg viewBox="0 0 64 64" class="ref-ornament-scroll" aria-hidden="true" focusable="false">
+                                <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6,58 C6,36 15,16 39,9 C51,6 58,14 54,24 C51,31 43,31 41,24 C40,20 44,17 48,19" />
+                                    <path d="M13,50 C19,39 30,32 45,32" />
+                                    <path d="M13,50 C17,41 24,34 34,29" />
+                                    <path d="M13,50 C15,43 18,37 24,31" />
+                                    <path d="M13,50 C13,44 14,38 16,32" />
+                                    <path d="M11,52 C22,57 35,54 46,43 C41,50 31,52 22,50" />
+                                    <path d="M50,22 C58,24 61,33 55,39 C62,37 64,46 57,50" />
+                                </g>
+                                <circle cx="48" cy="20.5" r="2.4" fill="currentColor" />
+                                <circle cx="12.5" cy="51" r="1.9" fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upper Raised Moulded Rail (`top: 26.5%`) -->
+                <div class="ref-moulded-rail rail-upper" aria-hidden="true">
+                    <span class="ref-rail-gold-line"></span>
+                </div>
+
+                <!-- 2. Main Center Recessed Boiserie Panel (`top: 29%; height: 39%`) with Garland (`bd`) & Sunburst (`xd`) -->
+                <div class="ref-boiserie-panel panel-middle">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                            <!-- Draped Festoon Garland (`bd`) -->
+                            <svg viewBox="0 0 200 60" class="ref-ornament-garland" aria-hidden="true" focusable="false">
+                                <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18,14 C58,52 142,52 182,14" />
+                                    <path d="M18,20 C60,46 140,46 182,20" />
+                                    <path d="M46,36 q16,16 32,4" />
+                                    <path d="M84,44 q16,12 32,0" />
+                                    <path d="M122,40 q16,14 32,-4" />
+                                    <path d="M18,14 q-9,12 -5,26 M18,14 q9,9 4,24" />
+                                    <path d="M182,14 q9,12 5,26 M182,14 q-9,9 -4,24" />
+                                    <path d="M100,49 v7" />
+                                </g>
+                                <circle cx="18" cy="13" r="3.2" fill="currentColor" />
+                                <circle cx="182" cy="13" r="3.2" fill="currentColor" />
+                                <circle cx="100" cy="57" r="2.4" fill="currentColor" />
+                            </svg>
+                            <!-- 12-Petal Sunburst Medallion (`xd`) -->
+                            <svg viewBox="0 0 64 64" class="ref-ornament-sunburst" aria-hidden="true" focusable="false">
+                                <g fill="none" stroke="currentColor" stroke-width="1.4">
+                                    <circle cx="32" cy="32" r="6" />
+                                    <circle cx="32" cy="32" r="14" />
+                                    <path d="M46,32 Q55.797,35.111 52,32 Q55.797,28.889 46,32 Z" />
+                                    <path d="M44.124,39 Q51.055,46.476 49.321,42 Q54.172,41.078 44.124,39 Z" />
+                                    <path d="M39,44.124 Q41.078,54.172 42,49.321 Q46.476,51.055 39,44.124 Z" />
+                                    <path d="M32,46 Q28.889,55.797 32,52 Q35.111,55.797 32,46 Z" />
+                                    <path d="M25,44.124 Q17.524,51.055 22,49.321 Q22.922,54.172 25,44.124 Z" />
+                                    <path d="M19.876,39 Q9.828,41.078 14.679,42 Q12.945,46.476 19.876,39 Z" />
+                                    <path d="M18,32 Q8.203,28.889 12,32 Q8.203,35.111 18,32 Z" />
+                                    <path d="M19.876,25 Q12.945,17.524 14.679,22 Q9.828,22.922 19.876,25 Z" />
+                                    <path d="M25,19.876 Q22.922,9.828 22,14.679 Q17.524,12.945 25,19.876 Z" />
+                                    <path d="M32,18 Q35.111,8.203 32,12 Q28.889,8.203 32,18 Z" />
+                                    <path d="M39,19.876 Q46.476,12.945 42,14.679 Q41.078,9.828 39,19.876 Z" />
+                                    <path d="M44.124,25 Q54.172,22.922 49.321,22 Q51.055,17.524 44.124,25 Z" />
+                                </g>
+                                <circle cx="32" cy="32" r="2.4" fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lower Raised Moulded Rail (`top: 69.5%`) -->
+                <div class="ref-moulded-rail rail-lower" aria-hidden="true">
+                    <span class="ref-rail-gold-line"></span>
+                </div>
+
+                <!-- 3. Lower Wainscot Recessed Boiserie Panel (`top: 72%; bottom: 7%`) -->
+                <div class="ref-boiserie-panel panel-lower">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Bottom Baseboard Recessed Panel (`bottom: 2%; height: 4.5%`) -->
+                <div class="ref-boiserie-panel panel-baseboard">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brushed Gold Kickplate (`Bd`) with 7 Brass Screws -->
+                <div class="ref-kickplate" aria-hidden="true">
+                    <div class="ref-kickplate-grain"></div>
+                    <div class="ref-kickplate-screws">
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(25deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(65deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(105deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(145deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(185deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(225deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(265deg);"></i></span>
+                    </div>
+                </div>
+
+                <!-- Dynamic Specular Sheen Overlay -->
+                <span id="doorSheenLeft" class="ref-door-sheen sheen-left" aria-hidden="true"></span>
+
+                <!-- Left Ornate Gold Backplate & Pearl-Beaded Pastel-Blue Heart Handle (`Cd`) -->
+                <div class="ref-handle-assembly handle-assembly-left" aria-hidden="true">
+                    <div class="ref-handle-backplate backplate-left">
+                        <div class="ref-backplate-inner-ring"></div>
+                        <div class="ref-backplate-screw screw-top"></div>
+                        <div class="ref-backplate-screw screw-bot"></div>
+                    </div>
+                    <svg viewBox="0 0 140 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="ref-heart-handle-svg heart-svg-left">
+                        <defs>
+                            <linearGradient id="heartGold-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFDF2" />
+                                <stop offset="25%" stop-color="#F8DE94" />
+                                <stop offset="55%" stop-color="#E2B755" />
+                                <stop offset="85%" stop-color="#B3842C" />
+                                <stop offset="100%" stop-color="#765013" />
+                            </linearGradient>
+                            <linearGradient id="heartHighlight-left" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" stop-color="#8C621C" />
+                                <stop offset="45%" stop-color="#FFEEB8" />
+                                <stop offset="85%" stop-color="#FFFDF5" />
+                                <stop offset="100%" stop-color="#D4A747" />
+                            </linearGradient>
+                            <radialGradient id="heartGem-left" cx="35%" cy="30%" r="70%">
+                                <stop offset="0%" stop-color="#FFFFFF" />
+                                <stop offset="30%" stop-color="#F0F7FD" />
+                                <stop offset="65%" stop-color="#CCE4F7" />
+                                <stop offset="88%" stop-color="#9FC7EA" />
+                                <stop offset="100%" stop-color="#6C9FCB" />
+                            </radialGradient>
+                            <radialGradient id="heartShadow-left" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#5E3E0C" />
+                                <stop offset="100%" stop-color="#2D1C03" />
+                            </radialGradient>
+                        </defs>
+                        <path d="M70 42 C50 20 20 32 20 62 C20 92 70 120 70 120 C70 120 120 92 120 62 C120 32 90 20 70 42 Z" fill="rgba(40, 25, 10, 0.25)" opacity="0.32" transform="translate(0, 4)" />
+                        <path d="M70 114 C70 130 64 148 56 168 C62 167 70 162 78 144 C84 130 80 118 78 114 Z" fill="url(#heartGold-left)" stroke="#7A5618" stroke-width="1" />
+                        <path d="M68 118 C67 132 60 146 57 162" stroke="#FFFBF0" stroke-width="1.2" stroke-linecap="round" opacity="0.85" />
+                        <path d="M70 42 C50 20 20 32 20 62 C20 92 70 118 70 118 C70 118 120 92 120 62 C120 32 90 20 70 42 Z" fill="url(#heartGold-left)" stroke="#8A631E" stroke-width="1.2" />
+                        <circle cx="28" cy="48" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="34" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="44" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="56" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="66" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="74" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="84" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="96" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="106" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="112" cy="48" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="116" cy="60" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="112" cy="74" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="102" cy="86" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="90" cy="98" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="80" cy="108" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="60" cy="108" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="50" cy="98" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="38" cy="86" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="28" cy="74" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="24" cy="60" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <path d="M70 52 C54 36 32 44 32 66 C32 88 70 108 70 108 C70 108 108 88 108 66 C108 44 86 36 70 52 Z" fill="url(#heartGem-left)" stroke="#487DA8" stroke-width="1" />
+                        <path d="M70 56 C58 46 42 50 42 66 C42 80 66 96 70 100 C70 100 70 56 70 56 Z" fill="rgba(255,255,255,0.3)" />
+                        <path d="M44 54 C50 48 60 48 68 54" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="0.9" />
+                        <circle cx="70" cy="72" r="4.5" fill="url(#heartHighlight-left)" stroke="#8A631E" stroke-width="0.8" />
+                        <circle cx="68.8" cy="70.8" r="1.5" fill="#FFFFFF" />
+                    </svg>
+                </div>
+
+            </div>
+        </div><!-- /#doorLeft -->
+
+
+        <!-- ================= RIGHT DOOR (`#doorRight`) ================= -->
+        <div id="doorRight" class="ref-door-wrapper ref-door-right" aria-hidden="true">
+            <div class="ref-door-slab slab-right">
+                <!-- Soft-light vertical sheen -->
+                <div class="ref-door-softlight" aria-hidden="true"></div>
+                <!-- Outer & Inner vertical stile edge shading -->
+                <span class="ref-stile-shade shade-outer-right" aria-hidden="true"></span>
+                <span class="ref-stile-shade shade-inner-right" aria-hidden="true"></span>
+
+                <!-- 3 Outer Gold Barrel Hinges (9%, 49%, bottom 9%) -->
+                <div class="ref-hinge hinge-right hinge-pos-top" aria-hidden="true">
+                    <div class="hinge-cap-top"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-ring"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-cap-bot"></div>
+                </div>
+                <div class="ref-hinge hinge-right hinge-pos-mid" aria-hidden="true">
+                    <div class="hinge-cap-top"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-ring"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-cap-bot"></div>
+                </div>
+                <div class="ref-hinge hinge-right hinge-pos-bot" aria-hidden="true">
+                    <div class="hinge-cap-top"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-ring"></div>
+                    <div class="hinge-barrel"></div>
+                    <div class="hinge-cap-bot"></div>
+                </div>
+
+                <!-- Right Door Center Meeting Astragal Moulding & Brass Bolts -->
+                <div class="ref-center-astragal" aria-hidden="true">
+                    <span class="astragal-bolt bolt-top"></span>
+                    <span class="astragal-bolt bolt-bot"></span>
+                </div>
+
+                <!-- Decorative Gold Heart Corner Ornament in Upper Corner -->
+                <svg viewBox="0 0 36 36" class="ref-corner-heart corner-heart-right" aria-hidden="true" focusable="false">
+                    <path d="M18 7 C14 1 5 3 5 12 C5 20 18 29 18 29 C18 29 31 20 31 12 C31 3 22 1 18 7 Z" fill="url(#doorHeartGold)" stroke="#765013" stroke-width="0.8" />
+                    <path d="M18 10 C15 5 8 6 8 13 C8 19 18 26 18 26 C18 26 28 19 28 13 C28 6 21 5 18 10 Z" fill="none" stroke="#FFF7DE" stroke-width="0.75" opacity="0.9" />
+                    <circle cx="18" cy="15" r="2.2" fill="#FFFDF5" opacity="0.95" />
+                </svg>
+
+                <!-- 1. Top Recessed Boiserie Panel (`top: 3%; height: 22%`) with Mirrored Botanical Scroll (`Sd`) -->
+                <div class="ref-boiserie-panel panel-top">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                            <svg viewBox="0 0 64 64" class="ref-ornament-scroll scroll-mirrored" aria-hidden="true" focusable="false">
+                                <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6,58 C6,36 15,16 39,9 C51,6 58,14 54,24 C51,31 43,31 41,24 C40,20 44,17 48,19" />
+                                    <path d="M13,50 C19,39 30,32 45,32" />
+                                    <path d="M13,50 C17,41 24,34 34,29" />
+                                    <path d="M13,50 C15,43 18,37 24,31" />
+                                    <path d="M13,50 C13,44 14,38 16,32" />
+                                    <path d="M11,52 C22,57 35,54 46,43 C41,50 31,52 22,50" />
+                                    <path d="M50,22 C58,24 61,33 55,39 C62,37 64,46 57,50" />
+                                </g>
+                                <circle cx="48" cy="20.5" r="2.4" fill="currentColor" />
+                                <circle cx="12.5" cy="51" r="1.9" fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upper Raised Moulded Rail (`top: 26.5%`) -->
+                <div class="ref-moulded-rail rail-upper" aria-hidden="true">
+                    <span class="ref-rail-gold-line"></span>
+                </div>
+
+                <!-- 2. Main Center Recessed Boiserie Panel (`top: 29%; height: 39%`) with Garland (`bd`) & Sunburst (`xd`) -->
+                <div class="ref-boiserie-panel panel-middle">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                            <!-- Draped Festoon Garland (`bd`) -->
+                            <svg viewBox="0 0 200 60" class="ref-ornament-garland" aria-hidden="true" focusable="false">
+                                <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18,14 C58,52 142,52 182,14" />
+                                    <path d="M18,20 C60,46 140,46 182,20" />
+                                    <path d="M46,36 q16,16 32,4" />
+                                    <path d="M84,44 q16,12 32,0" />
+                                    <path d="M122,40 q16,14 32,-4" />
+                                    <path d="M18,14 q-9,12 -5,26 M18,14 q9,9 4,24" />
+                                    <path d="M182,14 q9,12 5,26 M182,14 q-9,9 -4,24" />
+                                    <path d="M100,49 v7" />
+                                </g>
+                                <circle cx="18" cy="13" r="3.2" fill="currentColor" />
+                                <circle cx="182" cy="13" r="3.2" fill="currentColor" />
+                                <circle cx="100" cy="57" r="2.4" fill="currentColor" />
+                            </svg>
+                            <!-- 12-Petal Sunburst Medallion (`xd`) -->
+                            <svg viewBox="0 0 64 64" class="ref-ornament-sunburst" aria-hidden="true" focusable="false">
+                                <g fill="none" stroke="currentColor" stroke-width="1.4">
+                                    <circle cx="32" cy="32" r="6" />
+                                    <circle cx="32" cy="32" r="14" />
+                                    <path d="M46,32 Q55.797,35.111 52,32 Q55.797,28.889 46,32 Z" />
+                                    <path d="M44.124,39 Q51.055,46.476 49.321,42 Q54.172,41.078 44.124,39 Z" />
+                                    <path d="M39,44.124 Q41.078,54.172 42,49.321 Q46.476,51.055 39,44.124 Z" />
+                                    <path d="M32,46 Q28.889,55.797 32,52 Q35.111,55.797 32,46 Z" />
+                                    <path d="M25,44.124 Q17.524,51.055 22,49.321 Q22.922,54.172 25,44.124 Z" />
+                                    <path d="M19.876,39 Q9.828,41.078 14.679,42 Q12.945,46.476 19.876,39 Z" />
+                                    <path d="M18,32 Q8.203,28.889 12,32 Q8.203,35.111 18,32 Z" />
+                                    <path d="M19.876,25 Q12.945,17.524 14.679,22 Q9.828,22.922 19.876,25 Z" />
+                                    <path d="M25,19.876 Q22.922,9.828 22,14.679 Q17.524,12.945 25,19.876 Z" />
+                                    <path d="M32,18 Q35.111,8.203 32,12 Q28.889,8.203 32,18 Z" />
+                                    <path d="M39,19.876 Q46.476,12.945 42,14.679 Q41.078,9.828 39,19.876 Z" />
+                                    <path d="M44.124,25 Q54.172,22.922 49.321,22 Q51.055,17.524 44.124,25 Z" />
+                                </g>
+                                <circle cx="32" cy="32" r="2.4" fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lower Raised Moulded Rail (`top: 69.5%`) -->
+                <div class="ref-moulded-rail rail-lower" aria-hidden="true">
+                    <span class="ref-rail-gold-line"></span>
+                </div>
+
+                <!-- 3. Lower Wainscot Recessed Boiserie Panel (`top: 72%; bottom: 7%`) -->
+                <div class="ref-boiserie-panel panel-lower">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Bottom Baseboard Recessed Panel (`bottom: 2%; height: 4.5%`) -->
+                <div class="ref-boiserie-panel panel-baseboard">
+                    <div class="ref-boiserie-bevel">
+                        <div class="ref-boiserie-field">
+                            <div class="ref-boiserie-fillet"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brushed Gold Kickplate (`Bd`) with 7 Brass Screws -->
+                <div class="ref-kickplate" aria-hidden="true">
+                    <div class="ref-kickplate-grain"></div>
+                    <div class="ref-kickplate-screws">
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(25deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(65deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(105deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(145deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(185deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(225deg);"></i></span>
+                        <span class="ref-kp-screw"><i style="transform: translateY(-50%) rotate(265deg);"></i></span>
+                    </div>
+                </div>
+
+                <!-- Dynamic Specular Sheen Overlay -->
+                <span id="doorSheenRight" class="ref-door-sheen sheen-right" aria-hidden="true"></span>
+
+                <!-- Right Ornate Gold Backplate & Pearl-Beaded Pastel-Blue Heart Handle (`Cd`) -->
+                <div class="ref-handle-assembly handle-assembly-right" aria-hidden="true">
+                    <div class="ref-handle-backplate backplate-right">
+                        <div class="ref-backplate-inner-ring"></div>
+                        <div class="ref-backplate-screw screw-top"></div>
+                        <div class="ref-backplate-screw screw-bot"></div>
+                    </div>
+                    <svg viewBox="0 0 140 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="ref-heart-handle-svg heart-svg-right">
+                        <defs>
+                            <linearGradient id="heartGold-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFDF2" />
+                                <stop offset="25%" stop-color="#F8DE94" />
+                                <stop offset="55%" stop-color="#E2B755" />
+                                <stop offset="85%" stop-color="#B3842C" />
+                                <stop offset="100%" stop-color="#765013" />
+                            </linearGradient>
+                            <linearGradient id="heartHighlight-right" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" stop-color="#8C621C" />
+                                <stop offset="45%" stop-color="#FFEEB8" />
+                                <stop offset="85%" stop-color="#FFFDF5" />
+                                <stop offset="100%" stop-color="#D4A747" />
+                            </linearGradient>
+                            <radialGradient id="heartGem-right" cx="35%" cy="30%" r="70%">
+                                <stop offset="0%" stop-color="#FFFFFF" />
+                                <stop offset="30%" stop-color="#F0F7FD" />
+                                <stop offset="65%" stop-color="#CCE4F7" />
+                                <stop offset="88%" stop-color="#9FC7EA" />
+                                <stop offset="100%" stop-color="#6C9FCB" />
+                            </radialGradient>
+                        </defs>
+                        <path d="M70 42 C50 20 20 32 20 62 C20 92 70 120 70 120 C70 120 120 92 120 62 C120 32 90 20 70 42 Z" fill="rgba(40, 25, 10, 0.25)" opacity="0.32" transform="translate(0, 4)" />
+                        <path d="M70 114 C70 130 64 148 56 168 C62 167 70 162 78 144 C84 130 80 118 78 114 Z" fill="url(#heartGold-right)" stroke="#7A5618" stroke-width="1" />
+                        <path d="M68 118 C67 132 60 146 57 162" stroke="#FFFBF0" stroke-width="1.2" stroke-linecap="round" opacity="0.85" />
+                        <path d="M70 42 C50 20 20 32 20 62 C20 92 70 118 70 118 C70 118 120 92 120 62 C120 32 90 20 70 42 Z" fill="url(#heartGold-right)" stroke="#8A631E" stroke-width="1.2" />
+                        <circle cx="28" cy="48" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="34" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="44" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="56" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="66" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="74" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="84" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="96" cy="32" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="106" cy="38" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="112" cy="48" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="116" cy="60" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="112" cy="74" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="102" cy="86" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="90" cy="98" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="80" cy="108" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="60" cy="108" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="50" cy="98" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="38" cy="86" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="28" cy="74" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <circle cx="24" cy="60" r="2.2" fill="#FFFDF4" stroke="#9A7025" stroke-width="0.5" />
+                        <path d="M70 52 C54 36 32 44 32 66 C32 88 70 108 70 108 C70 108 108 88 108 66 C108 44 86 36 70 52 Z" fill="url(#heartGem-right)" stroke="#487DA8" stroke-width="1" />
+                        <path d="M70 56 C58 46 42 50 42 66 C42 80 66 96 70 100 C70 100 70 56 70 56 Z" fill="rgba(255,255,255,0.3)" />
+                        <path d="M44 54 C50 48 60 48 68 54" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="0.9" />
+                        <circle cx="70" cy="72" r="4.5" fill="url(#heartHighlight-right)" stroke="#8A631E" stroke-width="0.8" />
+                        <circle cx="68.8" cy="70.8" r="1.5" fill="#FFFFFF" />
+                    </svg>
+                </div>
+
+            </div>
+        </div><!-- /#doorRight -->
+
+
+        <!-- ================= HANGING PORCELAIN ENAMEL "WELCOME" PLAQUE WITH SATIN BLUE BOW (`wd`) ================= -->
+        <div id="welcomeHanger" class="ref-welcome-hanger" aria-hidden="true">
+            <svg viewBox="0 0 280 200" class="ref-welcome-svg">
+                <defs>
+                    <linearGradient id="signGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FFFDF4" />
+                        <stop offset="25%" stop-color="#F5D480" />
+                        <stop offset="50%" stop-color="#DFAD45" />
+                        <stop offset="80%" stop-color="#B27F24" />
+                        <stop offset="100%" stop-color="#734F11" />
+                    </linearGradient>
+                    <linearGradient id="chainShine" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#6C4A13" />
+                        <stop offset="40%" stop-color="#FFECA8" />
+                        <stop offset="75%" stop-color="#C99834" />
+                        <stop offset="100%" stop-color="#5E3E0C" />
+                    </linearGradient>
+                    <linearGradient id="satinBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#F4F9FD" />
+                        <stop offset="22%" stop-color="#D6EAF8" />
+                        <stop offset="55%" stop-color="#A8CEEF" />
+                        <stop offset="85%" stop-color="#72A5D6" />
+                        <stop offset="100%" stop-color="#4A81B8" />
+                    </linearGradient>
+                    <linearGradient id="satinCrease" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#356694" />
+                        <stop offset="100%" stop-color="#1E3F61" />
+                    </linearGradient>
+                    <radialGradient id="porcelainEnamel" cx="50%" cy="30%" r="70%">
+                        <stop offset="0%" stop-color="#FFFFFF" />
+                        <stop offset="35%" stop-color="#F0F7FD" />
+                        <stop offset="70%" stop-color="#D5ECFA" />
+                        <stop offset="100%" stop-color="#B6DCF6" />
+                    </radialGradient>
+                    <radialGradient id="broochPearl" cx="35%" cy="35%" r="65%">
+                        <stop offset="0%" stop-color="#FFFDF9" />
+                        <stop offset="40%" stop-color="#FDE7AE" />
+                        <stop offset="80%" stop-color="#CF9D3B" />
+                        <stop offset="100%" stop-color="#785314" />
+                    </radialGradient>
+                </defs>
+
+                <!-- Top Pearl & Gold Hook Pin -->
+                <g id="topHook">
+                    <circle cx="140" cy="14" r="9" fill="rgba(60,40,15,0.35)" />
+                    <circle cx="140" cy="13" r="8" fill="url(#signGold)" stroke="#6A4913" stroke-width="0.75" />
+                    <circle cx="140" cy="13" r="6" fill="none" stroke="#FFF7DE" stroke-width="0.8" opacity="0.9" />
+                    <circle cx="140" cy="13" r="3.5" fill="url(#broochPearl)" stroke="#5E3E0C" stroke-width="0.5" />
+                    <circle cx="139" cy="12" r="1" fill="#FFFFFF" />
+                </g>
+
+                <!-- Left Gold Chain Links -->
+                <g id="leftChain">
+                    <rect x="127" y="24" width="6" height="13" rx="3" transform="rotate(22 130 30)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                    <rect x="114" y="38" width="4" height="13" rx="2" transform="rotate(25 116 44)" fill="none" stroke="url(#chainShine)" stroke-width="1.6" />
+                    <rect x="99" y="52" width="6" height="13" rx="3" transform="rotate(28 102 58)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                    <rect x="83" y="66" width="4" height="13" rx="2" transform="rotate(31 85 72)" fill="none" stroke="url(#chainShine)" stroke-width="1.6" />
+                    <rect x="66" y="80" width="6" height="13" rx="3" transform="rotate(34 69 86)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                    <rect x="49" y="93" width="5" height="14" rx="2.5" transform="rotate(38 51 100)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                </g>
+
+                <!-- Right Gold Chain Links -->
+                <g id="rightChain">
+                    <rect x="147" y="24" width="6" height="13" rx="3" transform="rotate(-22 150 30)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                    <rect x="162" y="38" width="4" height="13" rx="2" transform="rotate(-25 164 44)" fill="none" stroke="url(#chainShine)" stroke-width="1.6" />
+                    <rect x="175" y="52" width="6" height="13" rx="3" transform="rotate(-28 178 58)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                    <rect x="193" y="66" width="4" height="13" rx="2" transform="rotate(-31 195 72)" fill="none" stroke="url(#chainShine)" stroke-width="1.6" />
+                    <rect x="208" y="80" width="6" height="13" rx="3" transform="rotate(-34 211 86)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                    <rect x="226" y="93" width="5" height="14" rx="2.5" transform="rotate(-38 229 100)" fill="none" stroke="url(#chainShine)" stroke-width="1.8" />
+                </g>
+
+                <!-- Porcelain Enamel "Welcome" Plaque Body -->
+                <g id="plaqueBody" transform="translate(0, 0)">
+                    <path d="M48 104 C40 104 28 114 28 126 L28 174 C28 186 40 196 52 196 L228 196 C240 196 252 186 252 174 L252 126 C252 114 240 104 232 104 Z" fill="rgba(80, 50, 25, 0.28)" transform="translate(0, 4)" />
+                    <path d="M48 102 C38 102 26 112 26 126 L26 172 C26 186 38 196 52 196 L228 196 C242 196 254 186 254 172 L254 126 C254 112 242 102 232 102 Z" fill="url(#signGold)" stroke="#7E5817" stroke-width="1" />
+                    <path d="M49 104 C40 104 29 113 29 126 L29 171 C29 184 40 194 53 194 L227 194 C240 194 251 184 251 171 L251 126 C251 113 240 104 231 104 Z" fill="url(#porcelainEnamel)" />
+                    <path d="M31 126 C31 116 41 107 52 106 L228 106 C239 107 249 116 249 126 C249 135 220 138 140 138 C60 138 31 135 31 126 Z" fill="rgba(255, 255, 255, 0.72)" />
+                    <path d="M51 110 C44 110 35 117 35 128 L35 169 C35 180 44 188 55 188 L225 188 C236 188 245 180 245 169 L245 128 C245 117 236 110 229 110 Z" fill="none" stroke="#D4A747" stroke-width="1" stroke-dasharray="3 3" opacity="0.8" />
+                    <g transform="translate(48, 102)">
+                        <circle cx="0" cy="0" r="7.5" fill="url(#signGold)" stroke="#6C4A13" stroke-width="0.8" />
+                        <circle cx="0" cy="0" r="4" fill="#6A4913" />
+                        <circle cx="0" cy="0" r="3.2" fill="#E2B755" />
+                        <circle cx="-1.5" cy="-1.5" r="1" fill="#FFFFFF" />
+                    </g>
+                    <g transform="translate(232, 102)">
+                        <circle cx="0" cy="0" r="7.5" fill="url(#signGold)" stroke="#6C4A13" stroke-width="0.8" />
+                        <circle cx="0" cy="0" r="4" fill="#6A4913" />
+                        <circle cx="0" cy="0" r="3.2" fill="#E2B755" />
+                        <circle cx="-1.5" cy="-1.5" r="1" fill="#FFFFFF" />
+                    </g>
+                    <text x="140" y="153" text-anchor="middle" font-family="'Great Vibes', 'Alex Brush', cursive" font-size="38" fill="#1E3A5A" class="ref-welcome-text">Welcome</text>
+                    <path d="M115 169 Q132 165 140 169 Q148 165 165 169" stroke="#C99834" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                    <circle cx="140" cy="169" r="1.8" fill="#DFAD45" />
+                    <circle cx="132" cy="168" r="1" fill="#DFAD45" />
+                    <circle cx="148" cy="168" r="1" fill="#DFAD45" />
+                </g>
+
+                <!-- Satin Pastel-Blue Bow with Animated Ribbon Tails -->
+                <g id="ribbonBow" transform="translate(140, 24)">
+                    <g class="ribbon-tail-left">
+                        <path d="M-6 12 C-14 26 -24 44 -34 60 C-26 57 -18 54 -12 58 C-6 44 -2 28 -2 14 Z" fill="url(#satinBlue)" stroke="#4A7EA8" stroke-width="0.6" />
+                        <path d="M-8 18 C-16 32 -24 48 -28 56" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.9" />
+                    </g>
+                    <g class="ribbon-tail-right">
+                        <path d="M6 12 C14 26 24 44 34 60 C26 57 18 54 12 58 C6 44 2 28 2 14 Z" fill="url(#satinBlue)" stroke="#4A7EA8" stroke-width="0.6" />
+                        <path d="M8 18 C16 32 24 48 28 56" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.9" />
+                    </g>
+                    <path d="M-4 6 C-14 -8 -34 -18 -48 -12 C-60 -8 -62 8 -48 16 C-34 24 -14 16 -3 8 Z" fill="url(#satinBlue)" stroke="#3E729C" stroke-width="0.8" />
+                    <path d="M-6 6 C-18 0 -34 -6 -44 0 C-50 4 -48 12 -40 14 C-28 17 -14 12 -5 7 Z" fill="url(#satinCrease)" opacity="0.38" />
+                    <path d="M-42 -6 C-30 -12 -16 -4 -6 4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.95" />
+                    <path d="M4 6 C14 -8 34 -18 48 -12 C60 -8 62 8 48 16 C34 24 14 16 3 8 Z" fill="url(#satinBlue)" stroke="#3E729C" stroke-width="0.8" />
+                    <path d="M6 6 C18 0 34 -6 44 0 C50 4 48 12 40 14 C28 17 14 12 5 7 Z" fill="url(#satinCrease)" opacity="0.38" />
+                    <path d="M42 -6 C30 -12 16 -4 6 4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.95" />
+                    <ellipse cx="0" cy="7" rx="8.5" ry="7.5" fill="url(#satinBlue)" stroke="#356690" stroke-width="0.9" />
+                    <path d="M-5 2 C-3 6 -3 10 -5 13" stroke="#1D3E60" stroke-width="0.8" stroke-linecap="round" />
+                    <path d="M5 2 C3 6 3 10 5 13" stroke="#1D3E60" stroke-width="0.8" stroke-linecap="round" />
+                    <circle cx="0" cy="7" r="3.2" fill="url(#broochPearl)" stroke="#6C4912" stroke-width="0.5" />
+                    <circle cx="-1" cy="6" r="1" fill="#FFFFFF" />
+                </g>
+            </svg>
+        </div>
+
+        <!-- Center Seam Warm Light Glow (`#doorLightSeam`) -->
+        <div id="doorLightSeam" class="ref-door-seam-glow" aria-hidden="true"></div>
+
+        <!-- Interactive Pull / Drag / Hold Zone Across Handles (`[data-testid="gate-pull"]`) -->
+        <div id="doorDragZone" data-testid="gate-pull" class="ref-door-drag-zone" aria-hidden="true"></div>
+
+    </div><!-- /.door-stage-viewport -->
+
+    <!-- ================= BOTTOM ACTION CONTROLS ("OPEN THE DOOR" + "or pull them apart") ================= -->
+    <div class="ref-door-controls">
+        <button id="openDoors" type="button" class="ref-btn-open-door">
+            <span class="ref-btn-top-line" aria-hidden="true"></span>
+            <span class="ref-btn-label">Open the door</span>
+        </button>
+        <p id="doorHoldSubtext" class="ref-door-pull-hint">or pull them apart</p>
+    </div>
+
+</section>
+
+
+<!-- ========================================================================
+     2. REFERENCE CIELONA LOGO REVEAL PRELOADER (`#brandIntro`)
+     - Replicates the exact reference video preloader (`Kd`):
+       * Warm cream radial-gradient backdrop (`#FEFDFB -> #FBF8F3 -> #F1E7D2`)
+       * Real-time transparent-keyed `<canvas>` + `<video>` (`assets/preloader.webm` / `assets/preloader.mp4`)
+       * Automatic fallback to SVG sequential letter reveal if video playback is unavailable
+       * Bottom-right "SKIP" pill button (`#skipBrand`)
+======================================================================== -->
+<section id="brandIntro" class="brand-intro" role="dialog" aria-modal="true" aria-label="Cielona presentation" aria-hidden="true">
+
+    <div id="brandContentBox" class="ref-preloader-stage">
+        <!-- Real-Time Keyed Canvas (Exact 1280x720 Preloader from Reference Video) -->
+        <canvas id="preloaderCanvas" width="1280" height="720" class="ref-preloader-canvas"></canvas>
+
+        <!-- Reference Preloader Video Source (`assets/preloader.webm` & `assets/preloader.mp4`) -->
+        <video id="preloaderVideo" muted playsinline preload="auto" class="ref-preloader-video" tabindex="-1" aria-hidden="true">
+            <source src="assets/preloader.webm" type="video/webm">
+            <source src="assets/preloader.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Bottom-Right "Skip" Pill Button Matching Reference Video -->
+    <button id="skipBrand" type="button" aria-label="Skip intro" class="ref-btn-skip-brand">
+        Skip
+    </button>
+
+</section>
+
+
+<!-- =========================================
+     3. MAIN WEBSITE (LUXURY BOUTIQUE)
+     (Announcement banner completely removed as requested)
+========================================= -->
+<main id="mainWebsite" class="main-website" aria-hidden="true">
+
+    <!-- STICKY HEADER & LUXURY NAVIGATION -->
+    <header id="navbar" class="boutique-navbar" role="banner">
+        <div class="nav-container">
+
+            <!-- Boutique Logo / Monogram -->
+            <a href="#hero" class="nav-brand" aria-label="Cielona Rentals Home">
+                <img src="images/logo.png" alt="Cielona Rentals" class="nav-brand-logo" onerror="this.src='images/logoo.png'">
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#collection" class="nav-link">The Collection</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#about" class="nav-link">The Story</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Inquire</a></li>
+                </ul>
+            </nav>
+
+            <!-- Redesigned Luxury Instagram Navigation & Mobile Toggle -->
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/cielona.rentals?mdxt=MXdseHQ2aG04dDIxcg%3D%3D"
+                   target="_blank" rel="noopener noreferrer"
+                   class="nav-ig-luxury" aria-label="Message Cielona Rentals on Instagram">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>MESSAGE US</span>
+                </a>
+
+                <button id="mobileToggle" class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <aside id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-header">
+            <span class="drawer-brand">CIELONA RENTALS</span>
+            <button id="drawerClose" class="drawer-close" type="button" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="#hero" class="drawer-link">Home</a></li>
+            <li><a href="#collection" class="drawer-link">The Collection</a></li>
+            <li><a href="#how-it-works" class="drawer-link">How It Works</a></li>
+            <li><a href="#about" class="drawer-link">The Story</a></li>
+            <li><a href="#faq" class="drawer-link">FAQ</a></li>
+            <li><a href="#contact" class="drawer-link">Inquire / Book</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <p>Studio in Cabuyao City, Laguna</p>
+            <a href="https://www.instagram.com/cielona.rentals?mdxt=MXdseHQ2aG04dDIxcg%3D%3D" target="_blank" rel="noopener noreferrer" class="drawer-ig-btn">
+                <span>Message Us on Instagram</span>
+            </a>
+        </div>
+    </aside>
+    <div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+
+    <!-- =========================================
+         HERO SECTION (LUXURY EDITORIAL)
+    ========================================= -->
+    <section id="hero" class="hero-section">
+
+        <!-- Subtle Ambient Celestial Pastel-Blue Stars in Hero Outer Margins (Non-Intrusive) -->
+        <div class="section-ambient-stars hero-ambient-stars" aria-hidden="true">
+            <span class="ambient-star as-medium sb-glow-twinkle" style="top: 7%; left: 2%;">✦</span>
+            <span class="ambient-star as-light sb-glow-float" style="top: 20%; left: 45%;">✧</span>
+            <span class="ambient-star as-deep sb-glow-pulse" style="bottom: 15%; left: 3%;">✦</span>
+            <span class="ambient-star as-soft sb-glow-twinkle" style="bottom: 8%; left: 42%;">✧</span>
+            <span class="ambient-star as-medium sb-glow-float" style="top: 52%; left: 1.5%;">✧</span>
+        </div>
+
+        <div class="hero-container">
+
+            <!-- Left: Romantic Editorial Typography -->
+            <div class="hero-text-col">
+
+                <div class="hero-badge">
+                    <span class="badge-star glowing-star">✦</span>
+                    <span>CABUYAO CITY, LAGUNA</span>
+                    <span class="badge-star glowing-star">✦</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line title-serif">Made for Moments</span>
+                    <span class="title-line title-script">Written in the Stars</span>
+                </h1>
+
+                <div class="hero-divider" aria-hidden="true">
+                    <span class="line"></span>
+                    <span class="symbol glowing-star">✧</span>
+                    <span class="line"></span>
+                </div>
+
+                <p class="hero-description">
+                    Cielona is born from <em class="ciel-emphasis">ciel</em> — the French word for sky and heaven. A curated collection of seven distinct silhouettes created to evoke effortless romance, grace, and timeless beauty on your most unforgettable evenings.
+                </p>
+
+                <!-- Value Props Highlights -->
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">✓</span>
+                        <span>Standard 3-Day Rental</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">✓</span>
+                        <span>₱500 Refundable Deposit</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">✓</span>
+                        <span>Fitting Studio in Cabuyao</span>
+                    </div>
+                </div>
+
+                <!-- Call to Actions -->
+                <div class="hero-cta-group">
+                    <a href="#collection" class="btn-primary-gold">
+                        <span>EXPLORE THE COLLECTION</span>
+                        <span class="btn-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="#how-it-works" class="btn-secondary-outline">
+                        <span>HOW RENTING WORKS</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Right: Minimalist Dress Collection Slideshow (Frameless Container with Enlarged HD framee.jpg & Pastel-Blue Stars) -->
+            <div class="hero-media-col">
+                <div class="editorial-card hero-slideshow-card" id="heroSlideshow">
+
+                    <!-- Decorative Frame & Dress Presentation Container (Enlarged HD framee.jpg) -->
+                    <div class="hero-frame-container">
+
+                        <!-- Surrounding Coordinated Pastel-Blue Glowing Animated Stars (Positioned around framee.jpg, NEVER overlapping dress) -->
+                        <div class="hero-skyblue-stars" aria-hidden="true">
+                            <span class="sb-star sb-1 sb-glow-twinkle" style="top: -2%; left: 6%;">✦</span>
+                            <span class="sb-star sb-2 sb-glow-float" style="top: 1%; right: 6%;">✧</span>
+                            <span class="sb-star sb-3 sb-glow-pulse" style="top: 22%; left: -5%;">✦</span>
+                            <span class="sb-star sb-4 sb-glow-twinkle" style="top: 26%; right: -5%;">✧</span>
+                            <span class="sb-star sb-5 sb-glow-float" style="top: 50%; left: -6%;">✦</span>
+                            <span class="sb-star sb-6 sb-glow-pulse" style="top: 54%; right: -6%;">✧</span>
+                            <span class="sb-star sb-7 sb-glow-twinkle" style="bottom: 14%; left: -3%;">✦</span>
+                            <span class="sb-star sb-8 sb-glow-float" style="bottom: 12%; right: -3%;">✧</span>
+                            <span class="sb-star sb-9 sb-glow-twinkle" style="top: 10%; left: -2%;">✧</span>
+                            <span class="sb-star sb-10 sb-glow-float" style="bottom: 26%; right: -4%;">✦</span>
+                        </div>
+
+                        <!-- Authentic HD Decorative Frame Asset (images/framee.jpg — Enlarged & Proportionally Scaled) -->
+                        <img src="images/framee.png" alt="Ornate Atelier Frame" class="hero-frame-overlay" aria-hidden="true">
+
+                        <!-- Inner Frame Opening: Dress is properly centered & proportionally scaled without overlapping borders -->
+                        <div class="hero-frame-window">
+                            <div class="hero-slide active" data-index="0" data-dress="Anastasia">
+                                <img src="images/anastasia.png" alt="Anastasia Dress" class="hero-slide-dress" loading="eager">
+                            </div>
+                            <div class="hero-slide" data-index="1" data-dress="Roséra">
+                                <img src="images/rosera.png" alt="Roséra Dress" class="hero-slide-dress" loading="lazy">
+                            </div>
+                            <div class="hero-slide" data-index="2" data-dress="Vivienne">
+                                <img src="images/vivienne.png" alt="Vivienne Dress" class="hero-slide-dress" loading="lazy">
+                            </div>
+                            <div class="hero-slide" data-index="3" data-dress="Amber">
+                                <img src="images/amber.png" alt="Amber Dress" class="hero-slide-dress" loading="lazy">
+                            </div>
+                            <div class="hero-slide" data-index="4" data-dress="Solenne">
+                                <img src="images/solenne.png" alt="Solenne Dress" class="hero-slide-dress" loading="lazy">
+                            </div>
+                            <div class="hero-slide" data-index="5" data-dress="Liezel">
+                                <img src="images/liezel.png" alt="Liezel Dress" class="hero-slide-dress" loading="lazy">
+                            </div>
+                            <div class="hero-slide" data-index="6" data-dress="Selene">
+                                <img src="images/selene.png" alt="Selene Dress" class="hero-slide-dress" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Discreet Previous / Next Arrow Controls -->
+                        <button class="slide-nav-btn prev-btn" id="heroSlidePrev" type="button" aria-label="Previous dress slide">
+                            <span aria-hidden="true">&#8249;</span>
+                        </button>
+                        <button class="slide-nav-btn next-btn" id="heroSlideNext" type="button" aria-label="Next dress slide">
+                            <span aria-hidden="true">&#8250;</span>
+                        </button>
+                    </div>
+
+                    <!-- Minimalist Editorial Caption: ONLY Collection Label & Dress Name (No prices or sizes) -->
+                    <div class="editorial-caption">
+                        <span class="caption-label" id="heroSlideCategory">SIGNATURE COUTURE</span>
+                        <h3 class="caption-title" id="heroSlideName">Anastasia</h3>
+                    </div>
+
+                    <!-- Subtle Pagination Indicators / Dots -->
+                    <div class="slideshow-pagination" id="heroSlidePagination" role="tablist" aria-label="Dress slideshow navigation">
+                        <button type="button" class="page-dot active" data-slide="0" aria-label="Slide 1: Anastasia" role="tab" aria-selected="true"></button>
+                        <button type="button" class="page-dot" data-slide="1" aria-label="Slide 2: Roséra" role="tab" aria-selected="false"></button>
+                        <button type="button" class="page-dot" data-slide="2" aria-label="Slide 3: Vivienne" role="tab" aria-selected="false"></button>
+                        <button type="button" class="page-dot" data-slide="3" aria-label="Slide 4: Amber" role="tab" aria-selected="false"></button>
+                        <button type="button" class="page-dot" data-slide="4" aria-label="Slide 5: Solenne" role="tab" aria-selected="false"></button>
+                        <button type="button" class="page-dot" data-slide="5" aria-label="Slide 6: Liezel" role="tab" aria-selected="false"></button>
+                        <button type="button" class="page-dot" data-slide="6" aria-label="Slide 7: Selene" role="tab" aria-selected="false"></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         THE CIELONA COLLECTION (STATIC 7-PIECE GRID)
+         - Perfectly fitted & aligned containers
+         - Category "TOP AND SKIRT SET" replaces "MINIS"
+         - Model View toggle available for all dresses
+    ========================================= -->
+    <section id="collection" class="collection-section">
+
+        <!-- Subtle Ambient Celestial Pastel-Blue Stars in Collection Header Margins (Never overlapping dress cards) -->
+        <div class="section-ambient-stars collection-ambient-stars" aria-hidden="true">
+            <span class="ambient-star as-medium sb-glow-twinkle" style="top: 52px; left: 7%;">✦</span>
+            <span class="ambient-star as-light sb-glow-float" style="top: 118px; left: 15%;">✧</span>
+            <span class="ambient-star as-soft sb-glow-float" style="top: 58px; right: 7%;">✦</span>
+            <span class="ambient-star as-deep sb-glow-pulse" style="top: 124px; right: 15%;">✧</span>
+            <span class="ambient-star as-medium sb-glow-twinkle" style="top: 185px; left: 9%;">✧</span>
+            <span class="ambient-star as-light sb-glow-pulse" style="top: 190px; right: 9%;">✦</span>
+        </div>
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <div class="section-subtitle-wrap">
+                    <span class="star-accent glowing-star">✦</span>
+                    <span class="section-subtitle">TIMELESS PIECES</span>
+                    <span class="star-accent glowing-star">✦</span>
+                </div>
+                <h2 class="section-title">The Cielona Collection</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <span class="line"></span>
+                    <span class="diamond glowing-star">✧</span>
+                    <span class="line"></span>
+                </div>
+                <p class="section-desc">
+                    Each silhouette is meticulously chosen for impeccable fit, exquisite draping, and undeniable presence. Select any piece to inspect rental details, view model styling, and reserve your date.
+                </p>
+
+                <!-- =====================================================
+                     MANUAL EDITING: COLLECTION CATEGORIES & FILTER TABS
+                     Change the visible category button names here.
+                     IMPORTANT: Keep each button's `data-filter` value matching
+                     the `data-category` value on the dress cards below and in
+                     `dressesCatalog` inside `script.js`:
+                       - "all"      -> Displays all dresses
+                       - "gown"     -> LONG DRESS & GOWNS
+                       - "romantic" -> MINI DRESS & COCKTAILS (includes Roséra)
+                       - "set"      -> TOP & SKIRT (Selene ONLY)
+                ===================================================== -->
+                <div class="collection-filters" role="tablist" aria-label="Dress Categories">
+                    <button class="filter-tab active" data-filter="all" type="button" role="tab" aria-selected="true">
+                        All Pieces (7)
+                    </button>
+                    <button class="filter-tab" data-filter="gown" type="button" role="tab" aria-selected="false">
+                        LONG DRESS &amp; GOWNS
+                    </button>
+                    <button class="filter-tab" data-filter="romantic" type="button" role="tab" aria-selected="false">
+                        MINI DRESS &amp; COCKTAILS
+                    </button>
+                    <button class="filter-tab" data-filter="set" type="button" role="tab" aria-selected="false">
+                        TOP &amp; SKIRT
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- =====================================================
+                 MANUAL EDITING: PRODUCT DATA & DRESS CATEGORY ASSIGNMENTS
+                 Each `<article class="dress-card">` below controls a dress card
+                 in the collection grid. You can manually edit:
+                   - `data-category`: Category filter key ("gown", "romantic", or "set")
+                   - `data-name`: Dress display name
+                   - `data-size`: Available size label
+                   - `data-price`: 3-day rental rate (numbers only, e.g., "650")
+                   - `data-deposit`: Security deposit (numbers only, e.g., "500")
+                   - `data-description`: Dress description shown in the modal
+                   - `data-dress-image`: Main garment image path
+                   - `data-model-image`: Model View photo path (leave "" if none yet)
+                 WARNING: When updating a dress here, also update its matching entry
+                 in `dressesCatalog` inside `script.js` so the modal stays in sync.
+            ===================================================== -->
+            <div class="dress-grid" id="dressGrid">
+
+                <!-- 1. ANASTASIA (Category: LONG DRESS & GOWNS -> data-category="gown") -->
+                <article class="dress-card"
+                    data-id="anastasia"
+                    data-category="gown"
+                    data-name="Anastasia"
+                    data-size="XS – SMALL"
+                    data-price="650"
+                    data-deposit="500"
+                    data-description="Corseted bodice with a soft draped skirt. A romantic burgundy silhouette crafted to accentuate posture and grace."
+                    data-dress-image="images/anastasia.png"
+                    data-model-image=""
+                    data-has-model="false">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label bestseller">BESTSELLER</span>
+                        <img src="images/anastasia.png" alt="Anastasia Dress" class="primary-card-img" loading="lazy">
+
+                        <!-- Model / Garment View Switcher -->
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Anastasia details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">XS – SMALL</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Anastasia</h3>
+                        <p class="dress-style">Corseted Evening Gown</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>650
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- =====================================================
+                     MANUAL EDITING: ROSÉRA CATEGORY ASSIGNMENT
+                     Roséra is assigned to MINI DRESS & COCKTAILS (`data-category="romantic"`).
+                     To move Roséra to another category in the future, change `data-category`
+                     below ("gown", "romantic", or "set") and update `rosera.category` in `script.js`.
+                ===================================================== -->
+                <!-- 2. ROSÉRA (Category: MINI DRESS & COCKTAILS -> data-category="romantic") -->
+                <article class="dress-card"
+                    data-id="rosera"
+                    data-category="romantic"
+                    data-name="Roséra"
+                    data-size="SMALL – MEDIUM"
+                    data-price="650"
+                    data-deposit="500"
+                    data-description="An alluring crimson halter neck top and skirt set blossoming with handcrafted 3D rose petals and a fluttery silhouette."
+                    data-dress-image="images/rosera.png"
+                    data-model-image=""
+                    data-has-model="false">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label romantic">MINI DRESS &amp; COCKTAILS</span>
+                        <img src="images/rosera.png" alt="Roséra Dress" class="primary-card-img" loading="lazy">
+
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Roséra details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">SMALL – MEDIUM</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Roséra</h3>
+                        <p class="dress-style">Crimson Petal Halter Set</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>650
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 3. VIVIENNE (Category: LONG DRESS & GOWNS -> data-category="gown") -->
+                <article class="dress-card"
+                    data-id="vivienne"
+                    data-category="gown"
+                    data-name="Vivienne"
+                    data-size="SMALL"
+                    data-price="650"
+                    data-deposit="500"
+                    data-description="Dramatic jet-black silhouette featuring a regal boned corset and voluminous bubble hem skirt."
+                    data-dress-image="images/vivienne.png"
+                    data-model-image="images/vivienneM.jpg"
+                    data-has-model="true">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label elegant">DRAMATIC</span>
+                        <img src="images/vivienne.png" alt="Vivienne Dress" class="primary-card-img" loading="lazy">
+
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Vivienne details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">SMALL</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Vivienne</h3>
+                        <p class="dress-style">Corset Bubble Gown</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>650
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 4. AMBER (Category: MINI DRESS & COCKTAILS -> data-category="romantic" — Model View via images/amberM.png) -->
+                <article class="dress-card"
+                    data-id="amber"
+                    data-category="romantic"
+                    data-name="Amber"
+                    data-size="XS – SMALL"
+                    data-price="550"
+                    data-deposit="500"
+                    data-description="Ethereal baby-blue botanical floral gown with a delicately boned lace bodice and fluttering tie-strap ribbons."
+                    data-dress-image="images/amber.png"
+                    data-model-image="images/amberM.png"
+                    data-has-model="true">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label romantic">SIGNATURE PIECE</span>
+                        <img src="images/amber.png" alt="Amber Dress" class="primary-card-img" loading="lazy">
+
+                        <!-- Interactive Model / Garment Toggle Switch -->
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Amber details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">XS – SMALL</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Amber</h3>
+                        <p class="dress-style">Powder-Blue Floral Gown</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>550
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 5. SOLENNE (Category: LONG DRESS & GOWNS -> data-category="gown" — Model View via images/solenneM.jpg) -->
+                <article class="dress-card"
+                    data-id="solenne"
+                    data-category="gown"
+                    data-name="Solenne"
+                    data-size="SMALL – MEDIUM"
+                    data-price="700"
+                    data-deposit="500"
+                    data-description="Sensual midnight black backless mermaid gown crafted from fluid satin, featuring delicate criss-cross straps."
+                    data-dress-image="images/solenne.png"
+                    data-model-image="images/solenneM.jpg"
+                    data-has-model="true">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label couture">LUXURY COUTURE</span>
+                        <img src="images/solenne.png" alt="Solenne Dress" class="primary-card-img" loading="lazy">
+
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Solenne details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">SMALL – MEDIUM</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Solenne</h3>
+                        <p class="dress-style">Backless Satin Evening Gown</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>700
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 6. LIEZEL (Category: MINI DRESS & COCKTAILS -> data-category="romantic") -->
+                <article class="dress-card"
+                    data-id="liezel"
+                    data-category="romantic"
+                    data-name="Liezel"
+                    data-size="SMALL – MEDIUM"
+                    data-price="500"
+                    data-deposit="500"
+                    data-description="Romantic blush rose silhouette with sheer off-the-shoulder draped lace sleeves and a gentle A-line skirt."
+                    data-dress-image="images/liezel.png"
+                    data-model-image=""
+                    data-has-model="false">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label romantic">ENCHANTING</span>
+                        <img src="images/liezel.png" alt="Liezel Dress" class="primary-card-img" loading="lazy">
+
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Liezel details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">SMALL – MEDIUM</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Liezel</h3>
+                        <p class="dress-style">Off-Shoulder Lace Cocktail</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>500
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- =====================================================
+                     MANUAL EDITING: SELENE CATEGORY ASSIGNMENT (TOP & SKIRT)
+                     Selene is the ONLY dress assigned to TOP & SKIRT (`data-category="set"`).
+                     WARNING: Do not assign `data-category="set"` to any other dress unless
+                     you want it to appear under the TOP & SKIRT filter tab.
+                ===================================================== -->
+                <!-- 7. SELENE (Category: TOP & SKIRT -> data-category="set") -->
+                <article class="dress-card"
+                    data-id="selene"
+                    data-category="set"
+                    data-name="Selene"
+                    data-size="MEDIUM"
+                    data-price="550"
+                    data-deposit="500"
+                    data-description="Sculptural ivory 2-piece top and skirt set featuring a boned corset bodice and a fairytale skirt adorned with blooming rosettes."
+                    data-dress-image="images/selene.png"
+                    data-model-image=""
+                    data-has-model="false">
+
+                    <div class="dress-image-container">
+                        <span class="dress-label set">TOP &amp; SKIRT</span>
+                        <img src="images/selene.png" alt="Selene Top and Skirt" class="primary-card-img" loading="lazy">
+
+                        <div class="card-photo-toggle" aria-label="Switch dress view">
+                            <button type="button" class="photo-toggle-btn active" data-target-view="garment">Garment</button>
+                            <button type="button" class="photo-toggle-btn" data-target-view="model">Model</button>
+                        </div>
+
+                        <div class="image-overlay">
+                            <button class="view-dress" type="button" aria-label="View Selene details">
+                                <span>VIEW DETAILS</span>
+                                <span class="view-icon">✦</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dress-info">
+                        <div class="dress-meta">
+                            <span class="dress-size-pill">MEDIUM</span>
+                            <span class="dress-tag">3-Day Rental</span>
+                        </div>
+                        <h3 class="dress-name">Selene</h3>
+                        <p class="dress-style">Sculptural Rosette Set</p>
+
+                        <div class="dress-pricing-row">
+                            <div class="dress-price">
+                                <span class="currency">₱</span>550
+                                <small class="duration">/ 3 days</small>
+                            </div>
+                            <span class="deposit-hint">Deposit: ₱500</span>
+                        </div>
+
+                        <button class="card-inquire-trigger" type="button">
+                            <span>Inspect &amp; Inquire</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         HOW IT WORKS (TRANSPARENT RENTAL EXPERIENCE)
+    ========================================= -->
+    <section id="how-it-works" class="how-section">
+
+        <!-- Subtle Ambient Celestial Pastel-Blue Stars in How Renting Works Outer Margins -->
+        <div class="section-ambient-stars how-ambient-stars" aria-hidden="true">
+            <span class="ambient-star as-medium sb-glow-twinkle" style="top: 54px; left: 8%;">✦</span>
+            <span class="ambient-star as-light sb-glow-float" style="top: 116px; left: 16%;">✧</span>
+            <span class="ambient-star as-deep sb-glow-float" style="top: 58px; right: 8%;">✦</span>
+            <span class="ambient-star as-soft sb-glow-pulse" style="top: 120px; right: 16%;">✧</span>
+        </div>
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <div class="section-subtitle-wrap">
+                    <span class="star-accent glowing-star">✦</span>
+                    <span class="section-subtitle">THE ATELIER EXPERIENCE</span>
+                    <span class="star-accent glowing-star">✦</span>
+                </div>
+                <h2 class="section-title">How Renting Works</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <span class="line"></span>
+                    <span class="diamond glowing-star">✧</span>
+                    <span class="line"></span>
+                </div>
+                <p class="section-desc">
+                    Four effortless steps from discovery to your grand entrance. We make formal attire sustainable, accessible, and breathtaking.
+                </p>
+            </div>
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <div class="step-badge">01</div>
+                    <div class="step-icon">✦</div>
+                    <h3 class="step-title">Choose Your Silhouette</h3>
+                    <p class="step-desc">
+                        Explore our curated 7-piece collection online. Review available sizes, styling notes, and high-resolution garment details.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">02</div>
+                    <div class="step-icon">💬</div>
+                    <h3 class="step-title">Inquire on Instagram</h3>
+                    <p class="step-desc">
+                        Send a DM to <a href="https://www.instagram.com/cielona.rentals" target="_blank" rel="noopener noreferrer">@cielona.rentals</a> with your target event date. We confirm dress availability within hours.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">03</div>
+                    <div class="step-icon">🪞</div>
+                    <h3 class="step-title">Studio Fitting &amp; Reserve</h3>
+                    <p class="step-desc">
+                        Visit our private atelier in Cabuyao City, Laguna for a personalized fitting. Settle the rental fee and refundable deposit to lock your dates.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">04</div>
+                    <div class="step-icon">✨</div>
+                    <h3 class="step-title">Wear &amp; Return</h3>
+                    <p class="step-desc">
+                        Enjoy your 3-day rental period and create unforgettable memories. Return the dress on schedule; professional dry cleaning is handled by us!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ABOUT US (THE CIELONA STORY)
+    ========================================= -->
+    <section id="about" class="about-section">
+
+        <!-- Subtle Ambient Celestial Pastel-Blue Stars in Outer Margins Around About Card -->
+        <div class="section-ambient-stars about-ambient-stars" aria-hidden="true">
+            <span class="ambient-star as-medium sb-glow-twinkle" style="top: 16%; left: 6%;">✦</span>
+            <span class="ambient-star as-light sb-glow-float" style="top: 48%; left: 4%;">✧</span>
+            <span class="ambient-star as-deep sb-glow-pulse" style="bottom: 18%; left: 7%;">✦</span>
+            <span class="ambient-star as-soft sb-glow-twinkle" style="top: 18%; right: 6%;">✧</span>
+            <span class="ambient-star as-medium sb-glow-float" style="top: 52%; right: 4%;">✦</span>
+            <span class="ambient-star as-deep sb-glow-twinkle" style="bottom: 16%; right: 7%;">✧</span>
+        </div>
+
+        <div class="section-container">
+
+            <div class="about-card">
+
+                <div class="about-header">
+                    <div class="section-subtitle-wrap">
+                        <span class="star-accent glowing-star">✦</span>
+                        <span class="section-subtitle">OUR ATELIER STORY</span>
+                        <span class="star-accent glowing-star">✦</span>
+                    </div>
+                    <h2 class="about-title">The Cielona Heritage</h2>
+                    <div class="section-divider" aria-hidden="true">
+                        <span class="line"></span>
+                        <span class="diamond glowing-star">✧</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="about-body">
+                    <p class="about-lead">
+                        Rooted in the French word <em class="ciel-emphasis">ciel</em>, meaning sky or heaven, Cielona was conceived with a romantic philosophy: that the most memorable evenings are written in the stars.
+                    </p>
+                    <p>
+                        We believe that luxury formalwear should be accessible, thoughtful, and sustainable. Instead of purchasing an expensive gown that will only be worn once, Cielona offers a curated edit of timeless silhouettes for your proms, debuts, gala nights, and black-tie celebrations.
+                    </p>
+                    <p>
+                        Based in Cabuyao City, Laguna, each garment is maintained with meticulous care and preserved to look pristine for every client who steps into our studio.
+                    </p>
+                </div>
+
+                <div class="about-quote-box">
+                    <span class="quote-symbol">“</span>
+                    <blockquote class="about-quote">
+                        Made for moments written in the stars.
+                    </blockquote>
+                    <cite class="quote-author">— CIELONA RENTALS ATELIER</cite>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FAQ SECTION
+    ========================================= -->
+    <section id="faq" class="faq-section">
+
+        <!-- Subtle Ambient Celestial Pastel-Blue Stars in FAQ Outer Margins -->
+        <div class="section-ambient-stars faq-ambient-stars" aria-hidden="true">
+            <span class="ambient-star as-soft sb-glow-twinkle" style="top: 18%; left: 6%;">✦</span>
+            <span class="ambient-star as-light sb-glow-float" style="bottom: 22%; left: 5%;">✧</span>
+            <span class="ambient-star as-medium sb-glow-float" style="top: 20%; right: 6%;">✧</span>
+            <span class="ambient-star as-deep sb-glow-pulse" style="bottom: 20%; right: 5%;">✦</span>
+        </div>
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <div class="section-subtitle-wrap">
+                    <span class="star-accent glowing-star">✦</span>
+                    <span class="section-subtitle">CLEAR ANSWERS</span>
+                    <span class="star-accent glowing-star">✦</span>
+                </div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <span class="line"></span>
+                    <span class="diamond glowing-star">✧</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="faq-accordion">
+
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span>How long is the standard rental period?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Our standard rental period is <strong>3 full days</strong>. Day 1 is pickup / arrival, Day 2 is your special event, and Day 3 is return day. Extended rental periods can be arranged upon inquiry.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How much is the security deposit and is it refundable?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>A standard <strong>₱500 PHP security deposit</strong> is required per dress rental. This is 100% refundable upon the safe return of the dress in its original condition without tears or permanent stains.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Do I need to wash or dry clean the gown before returning?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p><strong>No!</strong> Please do not attempt to wash, steam, or dry clean the gown yourself. Delicate fabrics and boning require specialized couture care. We handle all professional cleaning after each rental.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Where is your studio located and can I schedule a fitting?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Our fitting studio is located in <strong>Cabuyao City, Laguna</strong>. Fittings are strictly by appointment to ensure privacy and dedicated assistance. Message us on Instagram to schedule your slot.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How do I reserve a gown for my event date?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Simply click any dress card to inspect the rate and click <strong>INQUIRE TO BOOK</strong> or <strong>Copy Details for DM</strong>. Send the details to our Instagram page (<a href="https://www.instagram.com/cielona.rentals" target="_blank" rel="noopener noreferrer">@cielona.rentals</a>) with your event date and location.</p>
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT / QUICK INQUIRY SECTION -->
+    <section id="contact" class="contact-section">
+
+        <!-- Subtle Ambient Celestial Pastel-Blue Stars in Outer Margins Around Inquiry Card -->
+        <div class="section-ambient-stars contact-ambient-stars" aria-hidden="true">
+            <span class="ambient-star as-medium sb-glow-float" style="top: 20%; left: 7%;">✦</span>
+            <span class="ambient-star as-light sb-glow-twinkle" style="bottom: 22%; left: 5%;">✧</span>
+            <span class="ambient-star as-soft sb-glow-float" style="top: 22%; right: 7%;">✧</span>
+            <span class="ambient-star as-deep sb-glow-twinkle" style="bottom: 20%; right: 5%;">✦</span>
+        </div>
+
+        <div class="section-container">
+
+            <div class="contact-card">
+
+                <div class="contact-header">
+                    <span class="contact-subtitle">BEGIN YOUR RENTAL</span>
+                    <h2 class="contact-title">Inquire for Your Special Date</h2>
+                    <p class="contact-desc">
+                        Prepare your inquiry message in one click to send directly to our Instagram concierge team.
+                    </p>
+                </div>
+
+                <form id="quickInquiryForm" class="inquiry-form" onsubmit="return false;">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientName">Your Full Name</label>
+                            <input type="text" id="clientName" placeholder="e.g. Maria Santos" required autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dressSelect">Selected Silhouette</label>
+                            <select id="dressSelect" aria-label="Select dress">
+                                <option value="Anastasia (₱650 / 3 days)">Anastasia — ₱650 PHP (Long Dress &amp; Gowns, XS – Small)</option>
+                                <option value="Roséra (₱650 / 3 days)">Roséra — ₱650 PHP (Mini Dress &amp; Cocktails, Small – Medium)</option>
+                                <option value="Vivienne (₱650 / 3 days)">Vivienne — ₱650 PHP (Long Dress &amp; Gowns, Small)</option>
+                                <option value="Amber (₱550 / 3 days)">Amber — ₱550 PHP (Mini Dress &amp; Cocktails, XS – Small)</option>
+                                <option value="Solenne (₱700 / 3 days)">Solenne — ₱700 PHP (Long Dress &amp; Gowns, Small – Medium)</option>
+                                <option value="Liezel (₱500 / 3 days)">Liezel — ₱500 PHP (Mini Dress &amp; Cocktails, Small – Medium)</option>
+                                <option value="Selene (₱550 / 3 days)">Selene — ₱550 PHP (Top &amp; Skirt, Medium)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventDate">Target Event / Rental Date</label>
+                            <input type="date" id="eventDate" aria-label="Target Event Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientCity">Your City / Location</label>
+                            <input type="text" id="clientCity" placeholder="e.g. Cabuyao, Santa Rosa, Calamba, Laguna" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" id="copyInquiryBtn" class="btn-copy-inquiry">
+                            <span class="btn-icon" aria-hidden="true">📋</span>
+                            <span>Copy Inquiry Details</span>
+                        </button>
+
+                        <a href="https://www.instagram.com/cielona.rentals?mdxt=MXdseHQ2aG04dDIxcg%3D%3D"
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-open-ig">
+                            <span>Open Instagram Concierge</span>
+                            <span class="btn-arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                    <div id="inquiryCopyFeedback" class="copy-feedback-msg" role="status" aria-live="polite"></div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMPACT HORIZONTAL LUXURY FOOTER -->
+    <footer class="boutique-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand-col">
+                <a href="#hero" class="footer-logo-link" aria-label="Cielona Rentals Home">
+                    <img src="images/logo.png" alt="Cielona Rentals" class="footer-logo" onerror="this.src='images/logoo.png'">
+                </a>
+                <div class="footer-brand-meta">
+                    <p class="footer-tagline">“Made for moments written in the stars”</p>
+                    <span class="footer-location">Cabuyao City, Laguna, Philippines</span>
+                </div>
+            </div>
+
+            <nav class="footer-links-col" aria-label="Footer Navigation">
+                <ul class="footer-links-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#collection">The Collection</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about" class="about-link">The Story</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Inquire</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social-col">
+                <a href="https://www.instagram.com/cielona.rentals?mdxt=MXdseHQ2aG04dDIxcg%3D%3D"
+                   target="_blank" rel="noopener noreferrer"
+                   class="footer-ig-link"
+                   aria-label="Visit Cielona Rentals on Instagram">
+                    <svg class="footer-ig-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cielona Rentals. All Rights Reserved. Curated Formal Gowns &amp; Dresses in Cabuyao City, Laguna.</p>
+        </div>
+    </footer>
+
+    <!-- LUXURY FLOATING BACK TO TOP BUTTON -->
+    <button type="button" id="backToTopBtn" class="back-to-top-float" aria-label="Back to top">
+        <svg class="back-top-arrow-svg" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" aria-hidden="true">
+            <path d="M10 15.5V4.5M5 9.5L10 4.5L15 9.5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="back-top-float-text">TOP</span>
+    </button>
+
+</main>
+
+
+<!-- =========================================
+     4. EXPANDED LUXURY DRESS DETAILS MODAL
+     - Enlarged 540px High-Detail Image Display
+     - Integrated Model View Option for All Dresses
+     - "MODEL VIEW — TO BE UPDATED" Placeholder when photo is coming soon
+========================================= -->
+<div id="dressModal" class="dress-modal" role="dialog" aria-modal="true" aria-labelledby="modalDressName" aria-hidden="true">
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-content">
+
+        <!-- Close Button -->
+        <button id="closeModal" class="modal-close" type="button" aria-label="Close dress details">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Split Modal Grid: Large Studio Image Frame Left, Specifications Right -->
+        <div class="modal-grid">
+
+            <!-- =====================================================
+                 MANUAL EDITING: PRODUCT MODAL FRAME & IMAGE PRESENTATION
+                 - To change the decorative frame image file path, edit `src="images/frame.png"`
+                   on `<img class="modal-frame-overlay">` below.
+                 - To adjust the frame dimensions, inner opening size, or how the
+                   Garment / Model View image fits inside the frame, see Section 15
+                   ("MANUAL EDITING: PRODUCT MODAL FRAME") in `style.css`.
+            ===================================================== -->
+            <div class="modal-image-col">
+                <div class="modal-image-frame" id="modalImageFrame">
+                    <!-- Decorative Frame Asset (images/frame.png — Preserved at Original Proportions) -->
+                    <img src="images/frame.png" alt="Ornate Atelier Frame" class="modal-frame-overlay" aria-hidden="true">
+
+                    <!-- Inner Frame Opening: Dress & Model Photo Centered Inside frame.png Opening -->
+                    <div class="modal-frame-window">
+                        <!-- High-Resolution Garment / Model Image -->
+                        <img id="modalDressImage" src="images/anastasia.png" alt="Selected Dress">
+
+                        <!-- Professional Placeholder when Model Photograph is to be updated -->
+                        <div id="modalModelPlaceholder" class="modal-model-placeholder" style="display: none;">
+                            <span class="placeholder-icon glowing-star">✦</span>
+                            <h4 class="placeholder-title">MODEL VIEW — TO BE UPDATED</h4>
+                            <p class="placeholder-desc">Model photograph coming soon to our atelier collection.</p>
+                            <span class="placeholder-tag">CURATED FORMAL SILHOUETTE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery View Switcher Available for ALL Dresses -->
+                <div class="modal-gallery-switcher" id="modalGallerySwitcher">
+                    <button type="button" id="modalDressBtn" class="modal-view-tab active">
+                        <span class="tab-icon">✦</span>
+                        <span>Atelier Garment</span>
+                    </button>
+                    <button type="button" id="modalModelBtn" class="modal-view-tab">
+                        <span class="tab-icon">🪞</span>
+                        <span>Model View</span>
+                    </button>
+                </div>
+
+                <div class="modal-curated-badge">
+                    <span>✦ CURATED CABUYAO ATELIER PIECE ✦</span>
+                </div>
+            </div>
+
+            <!-- Right: Dress Specifications & Rental Booking -->
+            <div class="modal-details-col">
+
+                <div class="modal-header">
+                    <span class="modal-collection-tag">THE CIELONA COLLECTION</span>
+                    <h2 id="modalDressName" class="modal-dress-title">Anastasia</h2>
+                    <div class="modal-size-wrap">
+                        <span class="size-label">AVAILABLE SIZE:</span>
+                        <strong id="modalDressSize" class="modal-size">XS – SMALL</strong>
+                    </div>
+                </div>
+
+                <p id="modalDressDescription" class="modal-description">
+                    Corseted bodice with a soft draped skirt. A romantic burgundy silhouette crafted to accentuate posture and grace.
+                </p>
+
+                <!-- Rental Specifications Card -->
+                <div class="rental-card">
+
+                    <div class="rental-card-header">
+                        <div class="rate-label-wrap">
+                            <span class="rate-dot glowing-star">✦</span>
+                            <span class="rate-title">RENTAL RATE</span>
+                        </div>
+                        <span class="rental-duration">3-DAY RENTAL</span>
+                    </div>
+
+                    <div class="rental-price-display">
+                        <div class="price-main">
+                            <span class="currency-symbol">₱</span>
+                            <strong id="modalDressPrice">650</strong>
+                            <small class="currency-code">PHP</small>
+                        </div>
+                        <span class="price-tagline">Standard base rate for 3 full days</span>
+                    </div>
+
+                    <!-- Deposit Highlight Row -->
+                    <div class="deposit-row">
+                        <div class="deposit-label">
+                            <strong>Refundable Security Deposit</strong>
+                            <small>Promptly returned upon safe return</small>
+                        </div>
+                        <strong id="modalDressDeposit" class="deposit-amount">₱500 PHP</strong>
+                    </div>
+
+                    <!-- Atelier Inclusions Checklist -->
+                    <div class="rental-inclusions">
+                        <span class="inclusions-title">RENTAL INCLUSIONS:</span>
+                        <ul class="inclusions-list">
+                            <li><span class="inc-check">✓</span> 3-Day Full Rental Access</li>
+                            <li><span class="inc-check">✓</span> Post-Rental Professional Dry Cleaning</li>
+                            <li><span class="inc-check">✓</span> Garment Bag &amp; Protective Hanger</li>
+                            <li><span class="inc-check">✓</span> Private Studio Fitting by Appointment</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- =====================================================
+                     MANUAL EDITING: PRODUCT MODAL BOOKING BUTTON
+                     - To change the Instagram booking link, edit `href="..."` on `#inquireButton`.
+                     - To change the button background color, text color, or hover accent color,
+                       see `.btn-modal-inquire` in `style.css` (Section 15: "MANUAL EDITING:
+                       PRODUCT MODAL BOOKING BUTTON COLORS").
+                ===================================================== -->
+                <div class="modal-actions-wrap">
+                    <a id="inquireButton"
+                       href="https://www.instagram.com/cielona.rentals?mdxt=MXdseHQ2aG04dDIxcg%3D%3D"
+                       target="_blank" rel="noopener noreferrer"
+                       class="btn-modal-inquire">
+                        <span>INQUIRE TO BOOK ON INSTAGRAM</span>
+                        <span class="arrow-icon">→</span>
+                    </a>
+
+                    <button type="button" id="modalCopyBtn" class="btn-modal-copy">
+                        <span class="copy-icon">📋</span>
+                        <span>Copy Details for DM</span>
+                    </button>
+                </div>
+
+                <div id="modalCopyNotice" class="modal-copy-notice" role="status" aria-live="polite"></div>
+
+                <!-- Studio Address Note -->
+                <p class="modal-studio-note">
+                    📍 Fitting studio in Cabuyao City, Laguna. Message us to confirm date availability and schedule your fitting.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- JavaScript Module -->
+<script src="script.js"></script>
+
+</body>
+</html>

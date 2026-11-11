@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="120" viewBox="0 0 90 120">
+  <defs>
+    <g id="damask-floret">
+      <!-- Central core -->
+      <circle cx="45" cy="60" r="2.2" fill="#4a7298" fill-opacity="0.32" />
+      <!-- Vertical petals -->
+      <path d="M45,60 C42,53 40,43 45,39 C50,43 48,53 45,60 Z" fill="#4a7298" fill-opacity="0.22" />
+      <path d="M45,60 C42,67 40,77 45,81 C50,77 48,67 45,60 Z" fill="#4a7298" fill-opacity="0.22" />
+      <!-- Horizontal petals -->
+      <path d="M45,60 C38,57 28,55 24,60 C28,65 38,63 45,60 Z" fill="#4a7298" fill-opacity="0.22" />
+      <path d="M45,60 C52,57 62,55 66,60 C62,65 52,63 45,60 Z" fill="#4a7298" fill-opacity="0.22" />
+      <!-- Corner petal accents -->
+      <circle cx="34" cy="49" r="1.2" fill="#4a7298" fill-opacity="0.25" />
+      <circle cx="56" cy="49" r="1.2" fill="#4a7298" fill-opacity="0.25" />
+      <circle cx="34" cy="71" r="1.2" fill="#4a7298" fill-opacity="0.25" />
+      <circle cx="56" cy="71" r="1.2" fill="#4a7298" fill-opacity="0.25" />
+    </g>
+  </defs>
+
+  <!-- Lattice curved connecting lines forming ogee arches -->
+  <path d="M0,0 C20,30 25,30 45,60 C65,90 70,90 90,120" fill="none" stroke="#4a7298" stroke-width="0.85" stroke-opacity="0.16" />
+  <path d="M90,0 C70,30 65,30 45,60 C25,90 20,90 0,120" fill="none" stroke="#4a7298" stroke-width="0.85" stroke-opacity="0.16" />
+  <path d="M0,60 C20,90 25,90 45,120" fill="none" stroke="#4a7298" stroke-width="0.85" stroke-opacity="0.16" />
+  <path d="M90,60 C70,90 65,90 45,120" fill="none" stroke="#4a7298" stroke-width="0.85" stroke-opacity="0.16" />
+  <path d="M0,60 C20,30 25,30 45,0" fill="none" stroke="#4a7298" stroke-width="0.85" stroke-opacity="0.16" />
+  <path d="M90,60 C70,30 65,30 45,0" fill="none" stroke="#4a7298" stroke-width="0.85" stroke-opacity="0.16" />
+
+  <!-- Center floret -->
+  <use href="#damask-floret" x="0" y="0" />
+
+  <!-- Corner florets for seamless tiling -->
+  <use href="#damask-floret" x="-45" y="-60" />
+  <use href="#damask-floret" x="45" y="-60" />
+  <use href="#damask-floret" x="-45" y="60" />
+  <use href="#damask-floret" x="45" y="60" />
+</svg>
